@@ -12,7 +12,7 @@ function classNames(...classes : any) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example({name, mode, version, basePath, setMode} : {name: any, mode: any, version: any, basePath: any, setMode: any}) {
+export default function MyMenu({name, mode, version, basePath, setMode} : {name: any, mode: any, version: any, basePath: any, setMode: any}) {
 
 	const path = basePath ? basePath : '/'
 
@@ -57,7 +57,7 @@ export default function Example({name, mode, version, basePath, setMode} : {name
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
+                    {/* {navigation.map((item) => (
 											<Link
                         // @ts-ignore 
                         key={item.name}
@@ -67,9 +67,9 @@ export default function Example({name, mode, version, basePath, setMode} : {name
 												}>
 													{item.name}
 											</Link>
-                    ))}
+                    ))} */}
 
-										<Selector/>
+										{/* <Selector/> */}
 
 										{/*<a
                         key={item.name}
@@ -91,10 +91,10 @@ export default function Example({name, mode, version, basePath, setMode} : {name
                   <BellIcon className="h-6 w-6" aria-hidden="true" />
 											</button>*/}
 
-								<div className="flex items-center mr-2">
+								{/* <div className="flex items-center mr-2">
 									<Switch mode={mode} setMode={setMode}/>
-								</div>
-								<a href="http://github.com/michelson/dante" target="blank">
+								</div> */}
+								<a href="http://github.com/brishtiteveja/HeWithHer" target="blank">
 									<Image
 											//className="block lg:hidden h-8 w-auto"
 											src="/images/site/github-logo.png"
@@ -107,6 +107,7 @@ export default function Example({name, mode, version, basePath, setMode} : {name
               </div>
             </div>
           </div>
+          <h1 className="text-center font-bold font-mono underline text-6xl"> He With Her </h1>
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">

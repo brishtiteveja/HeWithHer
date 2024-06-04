@@ -70,7 +70,7 @@ export default function Index({}) {
                 text-white bg-indigo-600 hover:bg-indigo-700 
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               onClick={toggleReadOnly}>
-              {readOnly ? "Read only" : "Editable"}
+              {readOnly ? "R" : "E"}
             </button>}
 
             <Dante
